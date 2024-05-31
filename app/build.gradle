@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.example.android.keychain"
     compileSdkVersion 29
     buildToolsVersion "30.0.2"
 
@@ -11,7 +12,7 @@ android {
     }
 
     aaptOptions {
-        noCompress "p12"  //表示不让aapt压缩的文件后缀
+        noCompress "p12"  //Indicates the file suffix that does not allow aapt compression
     }
 
     buildTypes {
